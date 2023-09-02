@@ -73,10 +73,7 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
   ## Guards Nedir❓
    ☑ Angular uygulamasıda route erişimlerinin izin kontrolleri Guard yapılanması üzerinden yapılmaktadır.
    ☑ Sayfalar arası geçiş süreçlerinde ilgili kullanıcılarının erişimine izin verilip verilmeyeceğine dair karar veren yapılanmalardır.
-
-  ## Pipes Nedir❓
-   ☑ Verilerin görüntülenme süreçlerinde işlenmesine yönelik işlevsellik sağlayan yapılardır.
-
+   
   # Components
    ☑ Genellikle Angular uygulamasında componentlerin görevi sayfa altyapıları olarak kullanılmalarıdır. Bunun dışında sayfa olarak kullanılan componentlerin alt componentleri olarak da kullanılabilmekte. Böylece partial mantığında sayfaları geliştirmemize imkan verebilmektedir.
    ☑ Componentler birbirinden bağımsızdır. **Birbirleriyle iletişim kurarak büyük ve karmaşık uygulamaları yönetmeyi kolaylaştırır.**
@@ -92,12 +89,60 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
    ☑ İş mantığı gereği business logic barındıran servisler bu sınıf üzerinden çağırılır. Aynı şekilde API gibi dış servislere erişim sürecinin başlatılmasından sorumludur.
 
   ### Selector ➡ İlgili componentin, uygulamanın herhangi bir noktasında nasıl çağırılacağını tanımlayan bir referans özelliğidir. 
-  ☑ **Sadece HTML dosyalarında kullanılabilmektedir.**
-  ☑ Componentlerin birbirini selector ile referans edebilmeleri için ya aynı module içerisinde olmaları gerekiyor ya da buludukları module'den export edilmeleri gerekir.
+   ☑ **Sadece HTML dosyalarında kullanılabilmektedir.**
+   ☑ Componentlerin birbirini selector ile referans edebilmeleri için ya aynı module içerisinde olmaları gerekiyor ya da buludukları module'den export edilmeleri gerekir.
 
    ☑ **Oluşturulan componentin kullanılabilmesi için ana module içerisinde declare edilmesi gerekir.**
 
-  
-  
-  
+  ## Data Binding 
+   Component classında bulunan bir modelin veya fonksiyonun templatedeki bir alan ya da DOM nesnesi ile canlı olarak bağlantı oluşturmasını ifade eden bir kavramdır. 
+    ### Text Interpolation ➡ Template içerisinde, component class içerisinde tanımlı olan bir field/property değerinin yazdırılması için kullanılan **binding** yönetimidir.
+    ### Property Binding ➡ Template içerisindeki HTML nesneleri veya directiveler için component class içerisinde tanımlı olan verilerin property olarak direkt bağlanmasını sağlayan yöntemdir.
+    ### Event Binding ➡ Template içerisindeki herhangi bir DOM nesnesinin, component class içinde tanımlı olan bir fonksiyona event olarak bağlanmasıdır. Vrgülle ayırırak birden fazla event tanımlayabiliriz (Multiple Event Binding)
+    ### Two Way Binding ➡ Template içerisindeki bir HTML nesnesinin değeri değiştiğinde, o nesneyle bind edilmiş olan component class içerisindeki field/property değerinin anlık olarak değişmesi olayıdır.
+    ### Attribute Binding ➡ HTML elemanlarının attributeleri için değerleri doğrudan component class üzerinden verilmesini sağlayan yöntemdir. 
+    ### Style ve Class Binding ➡ CSS ile ilgili style veya class bildirilerinde bulunmak için kullanılan yöntemdir.
+    ### Change Detection Algoritması ➡ Bir modelin verisi değiştiğinde component class'ını bilgilendirmek ve template ile senkronizasyonu sağlayabilmek için kullanılır.
 
+  ## Interpolation Syntax
+   ☑ Component class içerisindeki herhangi bir field ya da property değerini {{}} operatörü aracılığıyla HTML içerisinde kullanılmasına text interpolation denir, bu ifadeye ise interpolation syntax denir.
+
+   ** Assign operatörleri, ";", new, instance of, ++, --, Bitwise operatörleri `*interpolation ile kullanılamaz.*` **
+
+   ## NgNonBindable 
+   ☑ Interpolation operatörünün compile edilememesini istediğiniz noktalarda bu özellik devreye sokulabilir.
+
+  ## Directive Nedir❓
+   ☑ HTML elemanlarına ekstra özellikler ve davranışlar eklemek için kullanılan özel etiketlerdir.
+   ☑ Davranışlarına göre farklı işlevsellik gösteren hazır (built-in) directiveler de bulunmaktadır. Bunlardan bazıları ngFor, ngIf, ngSwitch, ngClass, ngStyle, ngModel...
+
+  ## Custom Directive Nasıl Oluşturulur❓
+   ☑ Öncelikle ng generate directive directiveName komutuyla directive oluşturulur.
+   ☑ Bir directive oluşturulduğu zaman ana module içerisinde declare edilmedilir.
+   ☑ Bir directive'in directive olabilmesi için @Directive decorator'u ile işaretlenmek zorundadır. 
+   ☑ Selector özelliği [example] şeklinde yazılıyorsa eğer bu attribute olarak kullanılacağı anlamına gelmektedir. 
+   ☑ Selector özelliği .example şeklinde yazılıyorsa eğer bu da class olarak ilgili directive'in kullanılacağı anlamına gelmektedir. 
+
+   ** Directive üzerinde parametre tanımlayabilmek için Input field tanımlamak yeterlidir. **
+
+  ## Host Listener Nedir❓
+   ☑ Oluşturulan directive'in hangi event ile görevlendirileceğini belirten decorator'dur.
+   ☑ @HostListener("click") şeklinde gösterilir.
+
+  ## Host Binding Nedir❓
+   ☑ Directive'in işaretlendiği DOM nesnesinin bir özelliğine bind olarak işlemler gerçekleştirebiliriz.
+   ☑ @HostBinding("style.color") şeklinde gösterilir.
+
+  ## Pipe Nedir❓
+   ☑ Bir verinin görüntülenme şeklini değiştirmek için kullanılan Angular'a özel bir yapıdır.
+   ☑ Örneğin, bir tarih verisinin belirli bir formata görüntülenmesini, sayısal bir değerin para şeklinde ifade edilmesi pipe ile sağlanabilir. 
+   ☑ {{name | uppercase}}, {{1000 | currency}} şeklinde kullanılabilir.
+
+  ## Custom Pipe Nasıl Oluşturulur❓
+   ☑ Öncellikle "ng generate pipe pipeName" ya da "ng g p pipeName" komutlarından biriyle ilgili pipe'ı oluşturabiliriz.
+   ☑ Pipe olabilmesi için pipe decorator'u ile işaretlenmiş olması gerekmektedir. 
+   ☑ @Pipe({name:'Custom'}) şeklinde işaretlenir.
+   ☑ Aynı zamanda PipeTransform interface'i implements etmesi gerekir. 
+   ### Transform ➡ Pipe'ın kullanıldığı değeri manipüle/transform etmemizi sağlayan fonksiyondur.
+   
+ 
