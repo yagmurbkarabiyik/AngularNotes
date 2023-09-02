@@ -74,9 +74,30 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
    ☑ Angular uygulamasıda route erişimlerinin izin kontrolleri Guard yapılanması üzerinden yapılmaktadır.
    ☑ Sayfalar arası geçiş süreçlerinde ilgili kullanıcılarının erişimine izin verilip verilmeyeceğine dair karar veren yapılanmalardır.
 
-  ##Pipes Nedir❓
-    ☑ Verilerin görüntülenme süreçlerinde işlenmesine yönelik işlevsellik sağlayan yapılardır.
+  ## Pipes Nedir❓
+   ☑ Verilerin görüntülenme süreçlerinde işlenmesine yönelik işlevsellik sağlayan yapılardır.
 
+  # Components
+   ☑ Genellikle Angular uygulamasında componentlerin görevi sayfa altyapıları olarak kullanılmalarıdır. Bunun dışında sayfa olarak kullanılan componentlerin alt componentleri olarak da kullanılabilmekte. Böylece partial mantığında sayfaları geliştirmemize imkan verebilmektedir.
+   ☑ Componentler birbirinden bağımsızdır. **Birbirleriyle iletişim kurarak büyük ve karmaşık uygulamaları yönetmeyi kolaylaştırır.**
+
+   ### Template ➡ Componentin görsel çalışmalarının yapıldığı parçadır. 
+   ☑ Componentin .html dosyasına karşılık gelmektedir ve templateUrl ile ilişkilendirilmektedir.
+   ✳ Template işlemlerini fiziksel olarak ayrı bir dosya üzerinden gerçekleştirmek istiyorsanız .ts dosyası içerisinde template field'ına karşılık çalışabilirsiniz.
+
+   ### Style ➡ Componentin css, scss çalışmalarının yapıldığı tasarım parçasıdır.
+   ### Component Class ➡ Componentin merkezi olan ve .ts uzantılı olan dosyadır.
+   ☑ Tüm JavaScript, TypeScript, JQuery işlemleri bu parça üzerinde gerçekleştirilir. Component içerisinde kullanılacak değişkenlerle birlikte fonksiyonlar bu sınıf üzerine tanımlanır. 
+   ☑ Fonksiyonların nasıl işleneceği gibi işlevsellikler bu sınıf tarafından yönetilir. 
+   ☑ İş mantığı gereği business logic barındıran servisler bu sınıf üzerinden çağırılır. Aynı şekilde API gibi dış servislere erişim sürecinin başlatılmasından sorumludur.
+
+  ### Selector ➡ İlgili componentin, uygulamanın herhangi bir noktasında nasıl çağırılacağını tanımlayan bir referans özelliğidir. 
+  ☑ **Sadece HTML dosyalarında kullanılabilmektedir.**
+  ☑ Componentlerin birbirini selector ile referans edebilmeleri için ya aynı module içerisinde olmaları gerekiyor ya da buludukları module'den export edilmeleri gerekir.
+
+   ☑ **Oluşturulan componentin kullanılabilmesi için ana module içerisinde declare edilmesi gerekir.**
+
+  
   
   
 
