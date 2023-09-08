@@ -95,7 +95,7 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
     ☑ **Oluşturulan componentin kullanılabilmesi için ana module içerisinde declare edilmesi gerekir.**
 
   ## Data Binding 
-   Component classında bulunan bir modelin veya fonksiyonun templatedeki bir alan ya da DOM nesnesi ile canlı olarak bağlantı oluşturmasını ifade eden bir kavramdır. 
+    Component classında bulunan bir modelin veya fonksiyonun templatedeki bir alan ya da DOM nesnesi ile canlı olarak bağlantı oluşturmasını ifade eden bir kavramdır. 
     ### Text Interpolation ➡ Template içerisinde, component class içerisinde tanımlı olan bir field/property değerinin yazdırılması için kullanılan **binding** yönetimidir.
     ### Property Binding ➡ Template içerisindeki HTML nesneleri veya directiveler için component class içerisinde tanımlı olan verilerin property olarak direkt bağlanmasını sağlayan yöntemdir.
     ### Event Binding ➡ Template içerisindeki herhangi bir DOM nesnesinin, component class içinde tanımlı olan bir fonksiyona event olarak bağlanmasıdır. Vrgülle ayırırak birden fazla event tanımlayabiliriz (Multiple Event Binding)
