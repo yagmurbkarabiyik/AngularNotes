@@ -11,25 +11,25 @@ Single Page Application ➡ Özetle, bir web uygulamasının tüm işlevselliği
 Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut satırı üzerinden de halledebiliyoruz. Angular CLI kullanabilmek için öncellikle "npm install -g @angular/cli" komutunu çalıştırdıktan sonra artık Angular CLI ile projeler geliştirebiliriz. 
 
 ## Angular CLI Komutları
-   ng new projeAdı ➡ Sade bir şablonda yeni bir Angular uygulaması oluşturabilirsiniz.
-   ng version ➡  Angular projesinin yüklü olduğu sürümü ve bağımlılıklarını görüntülemek için kullanılır.
-   ng generate ➡ Angular projesinin yapı taşlarının (service, module, class ya da component gibi) üretilmesini sağlayan komuttur. Generate yerine sadece "g" harfini yazmanız da yeterli olacaktır. 
-   ng serve ➡ Angular uygulamamızı canlı olarak görüntüleyebilmemizi sağlar. Yani uygulamamızı ayağa kaldırır. 
-   ng build ➡  Bu komut ile uygulamanızı test aşamasından üretim aşamasına geçirerek, uygulamanızın hızlı ve optimize edilmiş bir şekilde çalışmasını sağlayabilirsiniz.
+    ng new projeAdı ➡ Sade bir şablonda yeni bir Angular uygulaması oluşturabilirsiniz.
+    ng version ➡  Angular projesinin yüklü olduğu sürümü ve bağımlılıklarını görüntülemek için kullanılır.
+    ng generate ➡ Angular projesinin yapı taşlarının (service, module, class ya da component gibi) üretilmesini sağlayan komuttur. Generate yerine sadece "g" harfini yazmanız da yeterli olacaktır. 
+    ng serve ➡ Angular uygulamamızı canlı olarak görüntüleyebilmemizi sağlar. Yani uygulamamızı ayağa kaldırır. 
+    ng build ➡  Bu komut ile uygulamanızı test aşamasından üretim aşamasına geçirerek, uygulamanızın hızlı ve optimize edilmiş bir şekilde çalışmasını sağlayabilirsiniz.
 
 ## Angular Bazı Dosya ve Sayfa Yapılanmaları
-   node_modules ➡ Projede kullanılan paketler bu dizinde bulunur. 
-   src ➡ Uygulamanın en önemli dosyasıdır. Uygulamanın kaynak kodlarını ve projenin geliştirme sürecinde kullanılan dosyaları içeren ana klasördür. Bu klasör, Angular uygulamanızın temelini oluşturur.
-   assets ➡ Uygulamayla ilgili resim, icon, video gibi dosyalar bu klasörde tutulur. 
-   index.html ➡ Temel geliştirme sayfasıdır.
-   main.ts ➡ Uygulama sürecinde hangi module dosyasının ana module olacağı burada belirtilmeli. Uygulamanın başlangıç noktasını belirleyen ve uygulamanın çalıştırılmasını başlatan dosyadır.
-   angular.json ➡ Uygulamayla ilgili script, style, budget gibi temel konfigürasyonlar burada yapılır.
-   package-lock-json ➡ Kullanılan paketlerin sürümleri hakkında bilgi içeren dosyadır.
-   tsconfig-json ➡ TypeScript ile alakalı konfigürasyonlar bu dosyada bulunur.
-   app ➡ Kullanılacak componentleri ve diğer Angular yapı taşlarını barındırır. Uygulamayla ilgili tüm çalışmalar burada yapılır. 
-   app-routing-module.ts ➡ Sayfalar arası route bilgilerini konfigüre edebileceğimiz dosyadır.
-   app.component.html ➡ Bu dosya, kullanıcı arayüzünün nasıl görüntüleneceğini tanımlar. Yani, kullanıcıların tarayıcıda gördüğü sayfanın yapısını ve içeriğini oluşturur.
-   app.module.ts ➡  Uygulamanın genel yapılandırmasını ve tüm modüllerin nasıl bir araya getirileceğini tanımlar.
+    node_modules ➡ Projede kullanılan paketler bu dizinde bulunur. 
+    src ➡ Uygulamanın en önemli dosyasıdır. Uygulamanın kaynak kodlarını ve projenin geliştirme sürecinde kullanılan dosyaları içeren ana klasördür. Bu klasör, Angular uygulamanızın temelini oluşturur.
+    assets ➡ Uygulamayla ilgili resim, icon, video gibi dosyalar bu klasörde tutulur. 
+    index.html ➡ Temel geliştirme sayfasıdır.
+    main.ts ➡ Uygulama sürecinde hangi module dosyasının ana module olacağı burada belirtilmeli. Uygulamanın başlangıç noktasını belirleyen ve uygulamanın çalıştırılmasını başlatan dosyadır.
+    angular.json ➡ Uygulamayla ilgili script, style, budget gibi temel konfigürasyonlar burada yapılır.
+    package-lock-json ➡ Kullanılan paketlerin sürümleri hakkında bilgi içeren dosyadır.
+    tsconfig-json ➡ TypeScript ile alakalı konfigürasyonlar bu dosyada bulunur.
+    app ➡ Kullanılacak componentleri ve diğer Angular yapı taşlarını barındırır. Uygulamayla ilgili tüm çalışmalar burada yapılır. 
+    app-routing-module.ts ➡ Sayfalar arası route bilgilerini konfigüre edebileceğimiz dosyadır.
+    app.component.html ➡ Bu dosya, kullanıcı arayüzünün nasıl görüntüleneceğini tanımlar. Yani, kullanıcıların tarayıcıda gördüğü sayfanın yapısını ve içeriğini oluşturur.
+    app.module.ts ➡  Uygulamanın genel yapılandırmasını ve tüm modüllerin nasıl bir araya getirileceğini tanımlar.
 
   ### **☑.ts dosyalarını controller gibi düşünebiliriz.**
 
