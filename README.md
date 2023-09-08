@@ -35,10 +35,10 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
 
 
   ## Module Nedir❓
-  ☑ Uygulama ögelerinin gruplandırılmasını sağlamaktadır. Böylece uygulama daha güzenli bir şekilde inşa edilebilir hale getirilmektedir. Uygulamanın çeşitli parçalarını (componenet, service gibi) bir araya getirererk bir bütün olarak kullanılabilir kılmaktadır. 
-   ☑ Module dosyaları birbirini import etmediği takdirde, bir module içerisinde bulunan parça diğer bir module altındaki parçalar tarafından **kullanılamaz.**
-   ☑ Module dosyaları Dependency Injection Pattern kullanarak uygulamadaki ögeler arasında bağımlılıkları yönetmekte ve bakım açısından kolaylık sağlamaktadır.
-   ☑ Ayrıca, Angular'ın işlemleri optimize etmek için kullandığı 'Lazy Loading' özelliğini de destekleyerek sadece ihtiyaç duyulduğu takdirde yüklenmelerini sağlayabilmektedirler.
+    ☑ Uygulama ögelerinin gruplandırılmasını sağlamaktadır. Böylece uygulama daha güzenli bir şekilde inşa edilebilir hale getirilmektedir. Uygulamanın çeşitli parçalarını (componenet, service gibi) bir araya getirererk bir bütün olarak kullanılabilir kılmaktadır. 
+    ☑ Module dosyaları birbirini import etmediği takdirde, bir module içerisinde bulunan parça diğer bir module altındaki parçalar tarafından **kullanılamaz.**
+    ☑ Module dosyaları Dependency Injection Pattern kullanarak uygulamadaki ögeler arasında bağımlılıkları yönetmekte ve bakım açısından kolaylık sağlamaktadır.
+    ☑ Ayrıca, Angular'ın işlemleri optimize etmek için kullandığı 'Lazy Loading' özelliğini de destekleyerek sadece ihtiyaç duyulduğu takdirde yüklenmelerini sağlayabilmektedirler.
 
 
  ## Component Nedir❓
@@ -64,35 +64,35 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
     ☑ Örneğin: @Component, @Injectable gibi @ işareti ile tanımlayabiliriz.
 
   ## Service Nedir❓ 
-  ☑ Dış servislerle (API - EndPoint) iletişim kurmak, karmaşık iş operasyonlarını, business logic'i yürütmek  ya da componentler arasında iletişim sağlamak için kullanılan fiili yapılanmalardır.
-   ☑ Operasyonel/fiili/kodlama gerektiren yapılardır.
+    ☑ Dış servislerle (API - EndPoint) iletişim kurmak, karmaşık iş operasyonlarını, business logic'i yürütmek  ya da componentler arasında iletişim sağlamak için kullanılan fiili yapılanmalardır.
+    ☑ Operasyonel/fiili/kodlama gerektiren yapılardır.
 
   ## Template Nedir❓ 
-   ☑ Componentlerin HTML kısmıdır. İçerisinde HTML kodları barındırabileceği gibi özel Angular elemanları, directive ya da pipe gibi birçok yapı barındırabilir.
+    ☑ Componentlerin HTML kısmıdır. İçerisinde HTML kodları barındırabileceği gibi özel Angular elemanları, directive ya da pipe gibi birçok yapı barındırabilir.
 
   ## Guards Nedir❓
-   ☑ Angular uygulamasıda route erişimlerinin izin kontrolleri Guard yapılanması üzerinden yapılmaktadır.
-   ☑ Sayfalar arası geçiş süreçlerinde ilgili kullanıcılarının erişimine izin verilip verilmeyeceğine dair karar veren yapılanmalardır.
+    ☑ Angular uygulamasıda route erişimlerinin izin kontrolleri Guard yapılanması üzerinden yapılmaktadır.
+    ☑ Sayfalar arası geçiş süreçlerinde ilgili kullanıcılarının erişimine izin verilip verilmeyeceğine dair karar veren yapılanmalardır.
    
   # Components
-   ☑ Genellikle Angular uygulamasında componentlerin görevi sayfa altyapıları olarak kullanılmalarıdır. Bunun dışında sayfa olarak kullanılan componentlerin alt componentleri olarak da kullanılabilmekte. Böylece partial mantığında sayfaları geliştirmemize imkan verebilmektedir.
+    ☑ Genellikle Angular uygulamasında componentlerin görevi sayfa altyapıları olarak kullanılmalarıdır. Bunun dışında sayfa olarak kullanılan componentlerin alt componentleri olarak da kullanılabilmekte. Böylece partial mantığında sayfaları geliştirmemize imkan verebilmektedir.
     ☑ Componentler birbirinden bağımsızdır. **Birbirleriyle iletişim kurarak büyük ve karmaşık uygulamaları yönetmeyi kolaylaştırır.**
 
    ### Template ➡ Componentin görsel çalışmalarının yapıldığı parçadır. 
-   ☑ Componentin .html dosyasına karşılık gelmektedir ve templateUrl ile ilişkilendirilmektedir.
+    ☑ Componentin .html dosyasına karşılık gelmektedir ve templateUrl ile ilişkilendirilmektedir.
    ✳ Template işlemlerini fiziksel olarak ayrı bir dosya üzerinden gerçekleştirmek istiyorsanız .ts dosyası içerisinde template field'ına karşılık çalışabilirsiniz.
 
    ### Style ➡ Componentin css, scss çalışmalarının yapıldığı tasarım parçasıdır.
    ### Component Class ➡ Componentin merkezi olan ve .ts uzantılı olan dosyadır.
-   ☑ Tüm JavaScript, TypeScript, JQuery işlemleri bu parça üzerinde gerçekleştirilir. Component içerisinde kullanılacak değişkenlerle birlikte fonksiyonlar bu sınıf üzerine tanımlanır. 
-   ☑ Fonksiyonların nasıl işleneceği gibi işlevsellikler bu sınıf tarafından yönetilir. 
-   ☑ İş mantığı gereği business logic barındıran servisler bu sınıf üzerinden çağırılır. Aynı şekilde API gibi dış servislere erişim sürecinin başlatılmasından sorumludur.
+    ☑ Tüm JavaScript, TypeScript, JQuery işlemleri bu parça üzerinde gerçekleştirilir. Component içerisinde kullanılacak değişkenlerle birlikte fonksiyonlar bu sınıf üzerine tanımlanır. 
+    ☑ Fonksiyonların nasıl işleneceği gibi işlevsellikler bu sınıf tarafından yönetilir. 
+    ☑ İş mantığı gereği business logic barındıran servisler bu sınıf üzerinden çağırılır. Aynı şekilde API gibi dış servislere erişim sürecinin başlatılmasından sorumludur.
 
   ### Selector ➡ İlgili componentin, uygulamanın herhangi bir noktasında nasıl çağırılacağını tanımlayan bir referans özelliğidir. 
-   ☑ **Sadece HTML dosyalarında kullanılabilmektedir.**
-   ☑ Componentlerin birbirini selector ile referans edebilmeleri için ya aynı module içerisinde olmaları gerekiyor ya da buludukları module'den export edilmeleri gerekir.
+    ☑ **Sadece HTML dosyalarında kullanılabilmektedir.**
+    ☑ Componentlerin birbirini selector ile referans edebilmeleri için ya aynı module içerisinde olmaları gerekiyor ya da buludukları module'den export edilmeleri gerekir.
 
-   ☑ **Oluşturulan componentin kullanılabilmesi için ana module içerisinde declare edilmesi gerekir.**
+    ☑ **Oluşturulan componentin kullanılabilmesi için ana module içerisinde declare edilmesi gerekir.**
 
   ## Data Binding 
    Component classında bulunan bir modelin veya fonksiyonun templatedeki bir alan ya da DOM nesnesi ile canlı olarak bağlantı oluşturmasını ifade eden bir kavramdır. 
@@ -105,44 +105,44 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
     ### Change Detection Algoritması ➡ Bir modelin verisi değiştiğinde component class'ını bilgilendirmek ve template ile senkronizasyonu sağlayabilmek için kullanılır.
 
   ## Interpolation Syntax
-   ☑ Component class içerisindeki herhangi bir field ya da property değerini {{}} operatörü aracılığıyla HTML içerisinde kullanılmasına text interpolation denir, bu ifadeye ise interpolation syntax denir.
+    ☑ Component class içerisindeki herhangi bir field ya da property değerini {{}} operatörü aracılığıyla HTML içerisinde kullanılmasına text interpolation denir, bu ifadeye ise interpolation syntax denir.
 
    ** Assign operatörleri, ";", new, instance of, ++, --, Bitwise operatörleri `*interpolation ile kullanılamaz.*` **
 
    ## NgNonBindable 
-   ☑ Interpolation operatörünün compile edilememesini istediğiniz noktalarda bu özellik devreye sokulabilir.
+    ☑ Interpolation operatörünün compile edilememesini istediğiniz noktalarda bu özellik devreye sokulabilir.
 
   ## Directive Nedir❓
-   ☑ HTML elemanlarına ekstra özellikler ve davranışlar eklemek için kullanılan özel etiketlerdir.
-   ☑ Davranışlarına göre farklı işlevsellik gösteren hazır (built-in) directiveler de bulunmaktadır. Bunlardan bazıları ngFor, ngIf, ngSwitch, ngClass, ngStyle, ngModel...
+    ☑ HTML elemanlarına ekstra özellikler ve davranışlar eklemek için kullanılan özel etiketlerdir.
+    ☑ Davranışlarına göre farklı işlevsellik gösteren hazır (built-in) directiveler de bulunmaktadır. Bunlardan bazıları ngFor, ngIf, ngSwitch, ngClass, ngStyle, ngModel...
 
   ## Custom Directive Nasıl Oluşturulur❓
-   ☑ Öncelikle ng generate directive directiveName komutuyla directive oluşturulur.
-   ☑ Bir directive oluşturulduğu zaman ana module içerisinde declare edilmedilir.
-   ☑ Bir directive'in directive olabilmesi için @Directive decorator'u ile işaretlenmek zorundadır. 
-   ☑ Selector özelliği [example] şeklinde yazılıyorsa eğer bu attribute olarak kullanılacağı anlamına gelmektedir. 
-   ☑ Selector özelliği .example şeklinde yazılıyorsa eğer bu da class olarak ilgili directive'in kullanılacağı anlamına gelmektedir. 
+    ☑ Öncelikle ng generate directive directiveName komutuyla directive oluşturulur.
+    ☑ Bir directive oluşturulduğu zaman ana module içerisinde declare edilmedilir.
+    ☑ Bir directive'in directive olabilmesi için @Directive decorator'u ile işaretlenmek zorundadır. 
+    ☑ Selector özelliği [example] şeklinde yazılıyorsa eğer bu attribute olarak kullanılacağı anlamına gelmektedir. 
+    ☑ Selector özelliği .example şeklinde yazılıyorsa eğer bu da class olarak ilgili directive'in kullanılacağı anlamına gelmektedir. 
 
    ** Directive üzerinde parametre tanımlayabilmek için Input field tanımlamak yeterlidir. **
 
   ## Host Listener Nedir❓
-  ☑ Oluşturulan directive'in hangi event ile görevlendirileceğini belirten decorator'dur.
-  ☑ @HostListener("click") şeklinde gösterilir.
+    ☑ Oluşturulan directive'in hangi event ile görevlendirileceğini belirten decorator'dur.
+    ☑ @HostListener("click") şeklinde gösterilir.
 
   ## Host Binding Nedir❓
-   ☑ Directive'in işaretlendiği DOM nesnesinin bir özelliğine bind olarak işlemler gerçekleştirebiliriz.
-   ☑ @HostBinding("style.color") şeklinde gösterilir.
+    ☑ Directive'in işaretlendiği DOM nesnesinin bir özelliğine bind olarak işlemler gerçekleştirebiliriz.
+    ☑ @HostBinding("style.color") şeklinde gösterilir.
 
   ## Pipe Nedir❓
-   ☑ Bir verinin görüntülenme şeklini değiştirmek için kullanılan Angular'a özel bir yapıdır.
-   ☑ Örneğin, bir tarih verisinin belirli bir formata görüntülenmesini, sayısal bir değerin para şeklinde ifade edilmesi pipe ile sağlanabilir. 
-   ☑ {{name | uppercase}}, {{1000 | currency}} şeklinde kullanılabilir.
+    ☑ Bir verinin görüntülenme şeklini değiştirmek için kullanılan Angular'a özel bir yapıdır.
+    ☑ Örneğin, bir tarih verisinin belirli bir formata görüntülenmesini, sayısal bir değerin para şeklinde ifade edilmesi pipe ile sağlanabilir. 
+    ☑ {{name | uppercase}}, {{1000 | currency}} şeklinde kullanılabilir.
 
   ## Custom Pipe Nasıl Oluşturulur❓
-   ☑ Öncellikle "ng generate pipe pipeName" ya da "ng g p pipeName" komutlarından biriyle ilgili pipe'ı oluşturabiliriz.
-   ☑ Pipe olabilmesi için pipe decorator'u ile işaretlenmiş olması gerekmektedir. 
-   ☑ @Pipe({name:'Custom'}) şeklinde işaretlenir.
-   ☑ Aynı zamanda PipeTransform interface'i implements etmesi gerekir. 
+    ☑ Öncellikle "ng generate pipe pipeName" ya da "ng g p pipeName" komutlarından biriyle ilgili pipe'ı oluşturabiliriz.
+    ☑ Pipe olabilmesi için pipe decorator'u ile işaretlenmiş olması gerekmektedir. 
+    ☑ @Pipe({name:'Custom'}) şeklinde işaretlenir.
+    ☑ Aynı zamanda PipeTransform interface'i implements etmesi gerekir. 
    ### Transform ➡ Pipe'ın kullanıldığı değeri manipüle/transform etmemizi sağlayan fonksiyondur.
    
  
