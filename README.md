@@ -143,6 +143,76 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
     ☑ Pipe olabilmesi için pipe decorator'u ile işaretlenmiş olması gerekmektedir. 
     ☑ @Pipe({name:'Custom'}) şeklinde işaretlenir.
     ☑ Aynı zamanda PipeTransform interface'i implements etmesi gerekir. 
+    
    ### Transform ➡ Pipe'ın kullanıldığı değeri manipüle/transform etmemizi sağlayan fonksiyondur.
+
+   ## Component Communication Nedir❓
+       ☑ Angular componentleri arasında veri ve olayları paylaşma süreçlerini ifade eden bir kavramdır.
+       ☑ Parent to Child ve Child to Parent olmak üzere iki farklı component communication türü vardır.
+
+  ## Component Life Cycle Hook Nedir❓
+       ☑ Bir Angular componentinin oluşturulduğu andan itibaren silindiği/imha edildiği ana kadar olan süreçteki belirli noktalarda çalıştırılmak üzere tasarlanmış olan davranışsal metotları ifade etmektedir.
+       ☑ Bu metotlar, uygulamanın kullanımı sürecinde componentin veri güncellemesi DOM ile etkileşime girmesi ya da takip edilen verilerdeki değişimler gibi görevleri yerine getirmemize yardımcı olurlar.
+       ☑ Her metot componentin farklı aşamalarında çalışır ve dolayısıyla birbirlerinden farklı görevleri yerine getirir.
+       ☑ Özetle, Component Life Cycle Hook bir componentin yaşam sürecinde uygun noktalarındaki tepkilerini/reflekslerini ifade eden bir kavramdır.
+
+       ☑ ngOnChanges ➡ Componentin Input değişkenindeki selector referansı üzerinden değiştiği durumlarda tetiklenir.
+       ☑ ngOnInit ➡ Component ilk defa oluşturulduğu zaman tetiklenir.
+       ☑ ngDoCheck ➡ Componentin güncellenmesi durumunda sık sık bu metot tetiklenmektedir.
+       ☑ ngAfterContentInit ➡ Component içeriği güncellendğinde tetiklenir.
+       ☑ ngAfterViewInit ➡ Componentin view'i ilk kez oluşturulduğunda tetiklenir.
+       ☑ ngAfterViewChecked ➡ View güncellendiğinde tetiklenir.
+       ☑ ngOnDestroy ➡ Componentin silinmesi/kaldırılması/imhası  durumunda tetiklenir.
+
+   ## Angular Forms Nedir❓
+       Kullanıcılardan veri alabilmek ya da kullanıcılarla etkileşime girebilmek için kullanılan yapılardır. Template-Driven Forms ve Model-Driven/Reactive Forms olmak üzere iki yaklaşımla kullanılabilmektedir.
+   ## Template Driven Forms 
+       ☑ Angular form yapısını oluşturmaın kolay yoludur.
+       ☑ Form elemanlarının her birini 'ngModel' direktifi ile işaretleyerek çalışma sergilenmektedir.
+       ☑ Formun tasarımını ve yapılandırmasının tamamen template üzerinden gerçekleştirilir.
+  ## Model Driven/Reactive Forms
+      ☑ Daha karmaşık form işlemleri için uygun olan yaklaşımdır.
+      ☑ Bu yaklaşımda formun temel mantığı component üzerinde bir nesne olarak tanımlanır ve bu nesne HTML'deki ilgili form etiketine bind edilir.
+      ☑ Bir yandan da rective forms olarak adlandırılmasının nedeni form elemanları ve bu form elemanlarındaki verilerin değişiklik durumları ilgili nesne tarafından 'reactive' (dinamik) bir şekilde takip edilmesidir.
+
+   ## Angular Form Konseptleri
+       ☑ Template Driven Forms ve Model Driven Forms yaklaşımlarından hangisinin kullanılıp kullanılmayacağına bakılmaksızın dört ana yapıtaşı mevcuttur.
+            ☑ Form Group ➡ Bir form içerisinde bulunan bir grup kontrolü temsil eder. Formun kendisini temsil eder.
+            ☑ Form Array ➡ Form içinde dinamik olarak oluşturulan kontrolleri temsil eden dizisel nesnedir.
+            ☑ Form Content ➡ Kullanıcıdan veri almamıza sağlayacak olan tek bir kontrolü temsil eder.
+            ☑ Form Builder ➡ Group, control ve array nesnelerini oluşturmamızı kolaylaştıran servis içindeki hazır fonksiyonlar sayesinde formu hızlıca üretmemize ve konfigüre etmemize imkan sağlar.
+            
+   ## Form Group vs Form Array         
+          ☑ En temel fark temsil ettikleri veri yapılarıdır. Group sabit bir form bölümünü temsil ederken, array dinamik olarak yüklenen form elemanlarını temsil eder.
+          ☑ İsim, soyisim, email gibi benzersiz kontroller group nesnesinde temsil edilirken, tel1, tel2 gibi benzer olanlar array nesnesiyle temsil edilir.
+
+   ## Template Driven Forms vs Model Driven Forms
+         Birkaç başlık altında iki farklı form türünü karşılaştıralım.
+         ## Veri Model
+             ☑ Model Driven Forms bir veri modeli ile yönetir.
+             ☑ Template Driven Forms verileri HTML şablonlarına bağlı olarak yönetir.
+
+        ## Doğrulama
+            ☑ Model Driven Forms tüm kontrolleri doğrulama kurallarına tabii tutar.
+            ☑ Template Driven Forms ngModel direktifi ile işaretlenmiş olan kontrollerde doğrulama gerçekleştirir.
+
+        ## Kontrolün Bağımsızlığı
+            ☑ Model Driven Forms kontrol bağımsızlığı sağlar.
+            ☑ Template Driven Forms kontrol bağımsızlığı sağlamaz.
+
+            ** Bir formdaki form kontrollerinin, formun geri kalan kısmından ayrı ve bağımsız bir şekilde kullanılabilmesini ifade eden bir özelliktir. ""
+      ## Karmaşıklık
+           ☑ Model Driven Forms daha büyük ve karmaşık form yapıları için daha uygun ve ideal.
+           ☑ Template Driven Forms daha basit ve sade formlar için tercih edilebilir.
+       
+
+
+
+
+
+
+
+
+
+
    
- 
