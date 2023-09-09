@@ -201,7 +201,7 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
             ☑ Template Driven Forms kontrol bağımsızlığı sağlamaz.
 
             ** Bir formdaki form kontrollerinin, formun geri kalan kısmından ayrı ve bağımsız bir şekilde kullanılabilmesini ifade eden bir özelliktir. ""
-      ## Karmaşıklık
+        ## Karmaşıklık
            ☑ Model Driven Forms daha büyük ve karmaşık form yapıları için daha uygun ve ideal.
            ☑ Template Driven Forms daha basit ve sade formlar için tercih edilebilir.
        
