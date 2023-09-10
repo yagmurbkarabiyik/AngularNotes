@@ -205,8 +205,8 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
            ☑ Model Driven Forms daha büyük ve karmaşık form yapıları için daha uygun ve ideal.
            ☑ Template Driven Forms daha basit ve sade formlar için tercih edilebilir.
        
-
-
+ ## NgModel Directive
+           ☑ Angular'da birden fazla form kontrolünü gruplamak için kullanılır. 
 
 
 
