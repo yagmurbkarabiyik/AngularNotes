@@ -205,9 +205,15 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
            ☑ Model Driven Forms daha büyük ve karmaşık form yapıları için daha uygun ve ideal.
            ☑ Template Driven Forms daha basit ve sade formlar için tercih edilebilir.
        
- ## NgModel Directive
+   ## NgModel Directive
            ☑ Angular'da birden fazla form kontrolünü gruplamak için kullanılır. 
 
+  ### Form Kontrollerine İlk Değer Atama
+          ☑ Form kontrollerine direkt olarak 'setValue' fonksiyonu aracılığıyla ilk değer atanabilmektedir.
+  ### Formun Bir Kısmına Değer Atama
+          ☑ Formdaki birkaç alan değiştirilmek, ilk değerleri atanmak istedniği durumlarda 'patchValue' fonksiyonu kullanılabilmektedir. 
+  ### Form Değerini Sıfırlama
+          ☑ Form değerleri 'reset, resetForm ya da onReset' fonksiyonlarıyla sıfırlanabilir. 
 
 
 
