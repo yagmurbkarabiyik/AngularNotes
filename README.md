@@ -188,7 +188,7 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
 
    ## Template Driven Forms vs Model Driven Forms
          Birkaç başlık altında iki farklı form türünü karşılaştıralım.
-         ## Veri Model
+         ## Veri Modeli
              ☑ Model Driven Forms bir veri modeli ile yönetir.
              ☑ Template Driven Forms verileri HTML şablonlarına bağlı olarak yönetir.
 
