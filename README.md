@@ -209,11 +209,11 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
            ☑ Angular'da birden fazla form kontrolünü gruplamak için kullanılır. 
 
   ### Form Kontrollerine İlk Değer Atama
-          ☑ Form kontrollerine direkt olarak 'setValue' fonksiyonu aracılığıyla ilk değer atanabilmektedir.
+           ☑ Form kontrollerine direkt olarak 'setValue' fonksiyonu aracılığıyla ilk değer atanabilmektedir.
   ### Formun Bir Kısmına Değer Atama
-          ☑ Formdaki birkaç alan değiştirilmek, ilk değerleri atanmak istedniği durumlarda 'patchValue' fonksiyonu kullanılabilmektedir. 
+           ☑ Formdaki birkaç alan değiştirilmek, ilk değerleri atanmak istedniği durumlarda 'patchValue' fonksiyonu kullanılabilmektedir. 
   ### Form Değerini Sıfırlama
-          ☑ Form değerleri 'reset, resetForm ya da onReset' fonksiyonlarıyla sıfırlanabilir. 
+           ☑ Form değerleri 'reset, resetForm ya da onReset' fonksiyonlarıyla sıfırlanabilir. 
 
 
 
