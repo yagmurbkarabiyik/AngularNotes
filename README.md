@@ -80,6 +80,7 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
 
    ### Template ➡ Componentin görsel çalışmalarının yapıldığı parçadır. 
     ☑ Componentin .html dosyasına karşılık gelmektedir ve templateUrl ile ilişkilendirilmektedir.
+    
    ✳ Template işlemlerini fiziksel olarak ayrı bir dosya üzerinden gerçekleştirmek istiyorsanız .ts dosyası içerisinde template field'ına karşılık çalışabilirsiniz.
 
    ### Style ➡ Componentin css, scss çalışmalarının yapıldığı tasarım parçasıdır.
