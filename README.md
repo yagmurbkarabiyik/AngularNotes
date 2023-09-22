@@ -15,7 +15,7 @@ Angular CLI sayesinde manuel olarak yapabileceğimiz bazı adımları komut sat�
     ng version ➡  Angular projesinin yüklü olduğu sürümü ve bağımlılıklarını görüntülemek için kullanılır.
     ng generate ➡ Angular projesinin yapı taşlarının (service, module, class ya da component gibi) üretilmesini sağlayan komuttur. Generate yerine sadece "g" harfini yazmanız da yeterli olacaktır. 
     ng serve ➡ Angular uygulamamızı canlı olarak görüntüleyebilmemizi sağlar. Yani uygulamamızı ayağa kaldırır. 
-    ng build ➡  Bu komut ile uygulamanızı test aşamasından üretim aşamasına geçirerek, uygulamanızın hızlı ve optimize edilmiş bir şekilde çalışmasını sağlayabilirsiniz.
+    ng build ➡ Bu komut ile uygulamanızı test aşamasından üretim aşamasına geçirerek, uygulamanızın hızlı ve optimize edilmiş bir şekilde çalışmasını sağlayabilirsiniz.
 
 ## Angular Bazı Dosya ve Sayfa Yapılanmaları
     node_modules ➡ Projede kullanılan paketler bu dizinde bulunur. 
